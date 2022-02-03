@@ -11,9 +11,26 @@
 <p>la mañana, usted debe llenar los datos del paciente con los siguientes campos a continuación:</p>
 <form>
     <div>
-        <label for="nombre">Nombre Completo</label>
-        <input name="nombre" id="nombre" placeholder="Juan Andres Pérez Salfate">
-        
+        <label for="nombre">Nombre Completo</label>   <!--Campo de Nombre-->
+        <input name="nombre" id="nombre" placeholder="Juan Andres Pérez Salfate"><br>
+        <label for="rut">Rut</label>    <!--Campo de Rut-->
+        <input type="number" id="rut" name="rut" required="required" min="4000000" minlength="7" maxlength="8" placeholder="12345678"/>
+        -  
+        <input type="text" id="dv" placeholder="K" required="required" minlength="1" maxlength="1" pattern="[0-9kK]{1}"><br> <!--Campo de Digito Verificador-->
+        <label for="email">Email</label>     <!--Campo de email-->
+        <input name="email" id="email" placeholder="jperez@gmail.com"><br>
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad">
+        <p>¿El paciente tiene diabetes?</p>
+        <form>
+            <input type="radio" name="diabetes" value="Si">
+            <label for="Si">Si</label>
+            <input type="radio" id="No" name="diabetes" value="No">
+            <label for="No">No</label>
+        </form>
+    </div>
+    <div class="form-line buttons">
+        <button id="boton" type="submit">Enviar</button>
     </div>
 </form>
 </body>
