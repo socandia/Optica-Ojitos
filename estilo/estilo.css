@@ -1,0 +1,26 @@
+div.columna-1
+div.columna-2
+div.columna-3 {
+    width: 33%;
+    float: left;
+}
+
+div.columna-2{
+    background-color: coral;
+}
+
+form #rut {
+    width: 80px;
+}
+
+form #dv {
+    width: 20px;
+}
+
+form #edad {
+    width: 40px;
+}
+
+div.cabecera{
+    text-align: center;
+}
