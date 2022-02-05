@@ -33,6 +33,7 @@
                     </li>
                 </ul>
             </nav>
+        </div>
     </div>
     <div class="columna-2">
         <form class="formulario">
@@ -40,7 +41,7 @@
                 <label for="nombre" style="color: aliceblue;">Nombre Completo</label>   <!--Campo de Nombre-->
                 <input name="nombre" id="nombre" placeholder="Juan Andres Pérez Salfate"><br>
                 <label for="rut" style="color: aliceblue;">Rut</label>    <!--Campo de Rut-->
-                <input type="number" id="rut" name="rut" required="required" min="4000000" minlength="7" maxlength="8" placeholder="12345678"/>
+                <input type="number" id="rut" name="rut" required="required" min="4000000" placeholder="12345678"/>
                 -  
                 <input type="text" id="dv" placeholder="K" required="required" minlength="1" maxlength="1" pattern="[0-9kK]{1}"><br> <!--Campo de Digito Verificador-->
                 <label for="email" style="color: aliceblue;">Email</label>     <!--Campo de email-->
@@ -51,12 +52,10 @@
                 <input type="text" id="Telefono" placeholder="+56912345678" required="required" maxlength="12" pattern="[+]{1,9}"><br>
                 <small style="color: aliceblue;">de preferencia, con WhatsApp habilitado</small>
                 <p style="color: aliceblue;">¿El paciente tiene diabetes?</p>
-                <form>
-                    <input type="radio" name="diabetes" value="Si">
-                    <label for="Si" style="color: aliceblue;">Si</label>
-                    <input type="radio" id="No" name="diabetes" value="No">
-                    <label for="No" style="color: aliceblue;">No</label>
-                </form>
+                <input type="radio" name="diabetes" value="Si">
+                <label for="Si" style="color: aliceblue;">Si</label>
+                <input type="radio" id="No" name="diabetes" value="No">
+                <label for="No" style="color: aliceblue;">No</label>
             </div>
             <div class="form-line buttons">
                 <button id="boton" type="submit">Enviar</button>
@@ -71,8 +70,5 @@
     </div>
 </body>
 
-<body>
 
-
-</body>
 </html>
