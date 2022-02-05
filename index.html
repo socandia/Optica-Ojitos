@@ -6,35 +6,62 @@
 </head>
 <body>
     <div id="cabecera" class="cabecera">
-        <img id="logo" src="img/logo.jpg" alt="Logotipo Optica" width="1500">
-    </div>
-
-    <div id="menu">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">
-                        Inicio
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Quienes somos
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Contacto
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <img id="logo" src="img/logo.jpg" alt="Logotipo Optica" width="1250">
+        <h1 style="color: aliceblue;">Formulario de inscripción</h1>
+        <p style="color: aliceblue;">Para inscribirse al operativo oftalmológico que atenderá el doctor "House"<br>
+        en las dependencias de Óptica "ojitos" (Bernardo O'Higgins 698 Manuel Montt Lautaro, Araucanía) durante<br>
+        la mañana, usted debe llenar los datos del paciente con los siguientes campos a continuación:</p>
     </div>
     <div class="columna-1">
-        Columna #1
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Quienes somos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
     </div>
     <div class="columna-2">
-        Columna 2
+        <form class="formulario">
+            <div>
+                <label for="nombre" style="color: aliceblue;">Nombre Completo</label>   <!--Campo de Nombre-->
+                <input name="nombre" id="nombre" placeholder="Juan Andres Pérez Salfate"><br>
+                <label for="rut" style="color: aliceblue;">Rut</label>    <!--Campo de Rut-->
+                <input type="number" id="rut" name="rut" required="required" min="4000000" minlength="7" maxlength="8" placeholder="12345678"/>
+                -  
+                <input type="text" id="dv" placeholder="K" required="required" minlength="1" maxlength="1" pattern="[0-9kK]{1}"><br> <!--Campo de Digito Verificador-->
+                <label for="email" style="color: aliceblue;">Email</label>     <!--Campo de email-->
+                <input name="email" id="email" placeholder="jperez@gmail.com"><br>
+                <label for="edad" style="color: aliceblue;">Edad</label>
+                <input type="number" id="edad" name="edad"><br>
+                <label for="Telefono" style="color: aliceblue;">Teléfono</label>
+                <input type="text" id="Telefono" placeholder="+56912345678" required="required" maxlength="12" pattern="[+]{1,9}"><br>
+                <small style="color: aliceblue;">de preferencia, con WhatsApp habilitado</small>
+                <p style="color: aliceblue;">¿El paciente tiene diabetes?</p>
+                <form>
+                    <input type="radio" name="diabetes" value="Si">
+                    <label for="Si" style="color: aliceblue;">Si</label>
+                    <input type="radio" id="No" name="diabetes" value="No">
+                    <label for="No" style="color: aliceblue;">No</label>
+                </form>
+            </div>
+            <div class="form-line buttons">
+                <button id="boton" type="submit">Enviar</button>
+            </div>
+        </form>
     </div>
     <div class="columna-3">
         Columna 3
@@ -46,33 +73,6 @@
 
 <body>
 
-<h1>Formulario de inscripción</h1>
-<p>Para inscribirse al operativo oftalmológico que atenderá el doctor Claudio Ramírez Hermosilla</p>
-<p>en las dependencias de Óptica ojitos (Bernardo O'Higgins 698 Manuel Montt Lautaro, Araucanía) durante</p>
-<p>la mañana, usted debe llenar los datos del paciente con los siguientes campos a continuación:</p>
-<form>
-    <div>
-        <label for="nombre">Nombre Completo</label>   <!--Campo de Nombre-->
-        <input name="nombre" id="nombre" placeholder="Juan Andres Pérez Salfate"><br>
-        <label for="rut">Rut</label>    <!--Campo de Rut-->
-        <input type="number" id="rut" name="rut" required="required" min="4000000" minlength="7" maxlength="8" placeholder="12345678"/>
-        -  
-        <input type="text" id="dv" placeholder="K" required="required" minlength="1" maxlength="1" pattern="[0-9kK]{1}"><br> <!--Campo de Digito Verificador-->
-        <label for="email">Email</label>     <!--Campo de email-->
-        <input name="email" id="email" placeholder="jperez@gmail.com"><br>
-        <label for="edad">Edad</label>
-        <input type="number" id="edad" name="edad">
-        <p>¿El paciente tiene diabetes?</p>
-        <form>
-            <input type="radio" name="diabetes" value="Si">
-            <label for="Si">Si</label>
-            <input type="radio" id="No" name="diabetes" value="No">
-            <label for="No">No</label>
-        </form>
-    </div>
-    <div class="form-line buttons">
-        <button id="boton" type="submit">Enviar</button>
-    </div>
-</form>
+
 </body>
 </html>

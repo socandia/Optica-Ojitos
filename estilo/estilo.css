@@ -1,12 +1,16 @@
-div.columna-1
-div.columna-2
-div.columna-3 {
+div.columna-1{
     width: 33%;
     float: left;
 }
 
+div.columna-3 {
+    width: 33%;
+    float: right;
+}
+
 div.columna-2{
-    background-color: coral;
+    width: 33%;
+    text-align: center;
 }
 
 form #rut {
@@ -23,4 +27,16 @@ form #edad {
 
 div.cabecera{
     text-align: center;
+}
+
+body{
+    background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+}
+
+.texto-justificado{
+    text-align: justify;
+}
+
+.cabecera{
+    text-align: justify;
 }
