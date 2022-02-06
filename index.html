@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Optica Lautaro</title>
+<title>Optica Ojitos</title>
 <link href="estilo/estilo.css" rel="stylesheet">
 </head>
 <body>
     <div id="cabecera" class="cabecera">
         <img id="logo" src="img/logo.jpg" alt="Logotipo Optica" width="1250">
-        <h1 style="color: aliceblue;">Formulario de inscripción</h1>
-        <p style="color: aliceblue;">Para inscribirse al operativo oftalmológico que atenderá el doctor "House"<br>
+        <h1 class="blanco">Formulario de inscripción</h1>
+        <p class="blanco">Para inscribirse al operativo oftalmológico que atenderá el doctor "House"<br>
         en las dependencias de Óptica "ojitos" (Bernardo O'Higgins 698 Manuel Montt Lautaro, Araucanía) durante<br>
         la mañana, usted debe llenar los datos del paciente con los siguientes campos a continuación:</p>
     </div>
@@ -36,28 +36,36 @@
         </div>
     </div>
     <div class="columna-2">
-        <form class="formulario">
-            <div>
-                <label for="nombre" style="color: aliceblue;">Nombre Completo</label>   <!--Campo de Nombre-->
+        <form class="formulario" method="get">
+            <div class="form-line">
+                <label for="nombre" class="blanco">Nombre Completo</label>   <!--Campo de Nombre-->
                 <input name="nombre" id="nombre" placeholder="Juan Andres Pérez Salfate"><br>
-                <label for="rut" style="color: aliceblue;">Rut</label>    <!--Campo de Rut-->
-                <input type="number" id="rut" name="rut" required="required" min="4000000" placeholder="12345678"/>
-                -  
-                <input type="text" id="dv" placeholder="K" required="required" minlength="1" maxlength="1" pattern="[0-9kK]{1}"><br> <!--Campo de Digito Verificador-->
-                <label for="email" style="color: aliceblue;">Email</label>     <!--Campo de email-->
-                <input name="email" id="email" placeholder="jperez@gmail.com"><br>
-                <label for="edad" style="color: aliceblue;">Edad</label>
-                <input type="number" id="edad" name="edad"><br>
-                <label for="Telefono" style="color: aliceblue;">Teléfono</label>
-                <input type="text" id="Telefono" placeholder="+56912345678" required="required" maxlength="12" pattern="[+]{1,9}"><br>
-                <small style="color: aliceblue;">de preferencia, con WhatsApp habilitado</small>
-                <p style="color: aliceblue;">¿El paciente tiene diabetes?</p>
-                <input type="radio" name="diabetes" value="Si">
-                <label for="Si" style="color: aliceblue;">Si</label>
-                <input type="radio" id="No" name="diabetes" value="No">
-                <label for="No" style="color: aliceblue;">No</label>
             </div>
-            <div class="form-line buttons">
+            <div class="form-line">
+                <label for="rut" class="blanco">Rut</label>    <!--Campo de Rut-->
+                <input type="number" id="rut" name="rut" required="required" min="4000000" placeholder="12345678"/>
+                <span class="blanco">-</span>  
+                <input type="text" id="dv" placeholder="K" required="required" minlength="1" maxlength="1" pattern="[0-9kK]{1}"><br> <!--Campo de Digito Verificador-->
+            </div>
+            <div class="form-line">
+                <label for="email" class="blanco">Email</label>     <!--Campo de email-->
+                <input type="email" name="email" id="email" placeholder="jperez@gmail.com"><br>
+            </div>
+            <div class="form-line">
+                <label for="edad" class="blanco">Edad</label>
+                <input type="number" id="edad" name="edad"><br>
+            </div>
+            <div class="form-line">
+                <label for="Telefono" class="blanco">Teléfono</label>
+                <input type="tel" id="Telefono" placeholder="+56912345678" required="required" maxlength="12"><br>
+            </div>
+                <small class="blanco">de preferencia, con WhatsApp habilitado</small>
+                <p class="blanco">¿El paciente tiene diabetes?</p>
+                <input type="radio" name="diabetes" value="Si">
+                <label for="Si" class="blanco">Si</label>
+                <input type="radio" id="No" name="diabetes" value="No">
+                <label for="No" class="blanco">No</label>
+            <div class="form-linebuttons">
                 <button id="boton" type="submit">Enviar</button>
             </div>
         </form>
@@ -68,6 +76,8 @@
     <div id="pie-pagina">
 
     </div>
+
+    <script src="javascript.js"></script>
 </body>
 
 
