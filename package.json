@@ -1,0 +1,26 @@
+{
+  "name": "optica-ojitos",
+  "version": "1.0.0",
+  "description": "Optica",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/socandia/Optica-Ojitos.git"
+  },
+  "keywords": [
+    "optica"
+  ],
+  "author": "sebastian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/socandia/Optica-Ojitos/issues"
+  },
+  "homepage": "https://github.com/socandia/Optica-Ojitos#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0"
+  }
+}
