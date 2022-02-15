@@ -12,29 +12,23 @@
 </head>
 
 <body>
+  <div class="container">
     <h1>Formulario de Contacto</h1>
     <div class="container">
       <form class="row g-3">
         <div class="col-md-6">
-          <label for="validationServer01" class="form-label">Nombre</label>
-          <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-          <div class="valid-feedback">
-            Looks good!
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" value="Juan" required>
+          <div id="feedback-nombre" class="">
           </div>
         </div>
         <div class="col-md-6">
-          <label for="validationServer02" class="form-label">Apellido</label>
-          <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="apellido" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="apellido" value="Pérez" required>
         </div>
         <div class="col-md-12">
-          <label for="validationServer03" class="form-label">Ciudad</label>
-          <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-          <div id="validationServer03Feedback" class="invalid-feedback">
-            Please provide a valid city.
-          </div>
+          <label for="ciudad" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="ciudad" aria-describedby="validationServer03Feedback" required>
         </div>
         <div class="col-md-3">
           Motivo:
@@ -47,7 +41,7 @@
             <label class="form-check-label" for="validationFormCheck3">Consulta</label>
             <div class="invalid-feedback">More example invalid feedback text</div>
           </div>
-          <div class="form-check mb-3">
+          <div class="form-check">
             <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
             <label class="form-check-label" for="validationFormCheck3">Queja</label>
             <div class="invalid-feedback">More example invalid feedback text</div>
@@ -69,11 +63,14 @@
           </div>
         </div>
         <div class="col-12">
-          <button class="btn btn-primary" type="submit">Submit form</button>
+          <button id="boton"class="btn btn-primary" >Submit form</button>
         </div>
       </form>
 
     </div>
+
+  </div>
+    
     
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
