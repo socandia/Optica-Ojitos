@@ -1,9 +1,13 @@
-   
-img.testimonio {
-    height: 150px;
+.negro{
+    color: black;
 }
 
-section#testimonios {
-    margin-top: 30px;
-    margin-bottom: 30px;
+img.testimonio{
+max-width: 250px;
+
+}
+
+#carrusel .text-dark {
+background-color: rgba(0,0,0, 0.3);
+border-radius: 5px;
 }
