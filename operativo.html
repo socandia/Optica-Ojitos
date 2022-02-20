@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>Operativo Oftalmológico</title>
+    <link href="estilo/operativo.css" rel="stylesheet"/>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />    
+</head>
+<body>
+
+
+    <div class="container">
+
+        <header>
+          <div class="row">
+            <div class="col-10">
+
+            </div>
+            <div class="col-2">
+              <a class="btn btn-outline-success" href="login.html" >Iniciar sesión</a>
+            </div>
+
+
+          </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                      <img src="img/logo.png">
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Hombre</a></li>
+                          <li><a class="dropdown-item" href="#">Mujer</a></li>
+                          <li><a class="dropdown-item" href="#">Unisex</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Historia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+  <body>
+    <div class="container">
+      <img class="operativo" src="img/logox.jpg" alt="Logo">
+    </div>
+
+    <section class="reserva-hora">
+      <div class="container">
+        <div class="col-md-9 col-sm-9 col-xs-12">
+          <div class="formulario">
+            <!--Divisor para datos del auto-->
+            <div class="divisor">
+              <h2>INSCRIPCIÓN OPERATIVO OFTALMOLÓGICO</h2>
+              <hr class="text-black" />
+            </div>
+            <h3>DATOS PERSONALES</h3>
+            <form class="row g-3 needs-validation" action="operativo.html" novalidate>
+              <div class="col-md-4 position-relative">
+                <label for="validationTooltip01" class="form-label">Rut</label>
+                <input type="text" class="form-control" id="rut" value="12345678-9" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+  
+              <div class="col-md-4 position-relative">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+                <div id="feedback-nombre" class="">
+                </div>
+              </div>
+              <div class="col-md-4 position-relative">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+                <div id="feedback-apellido" class="">
+                </div>
+              </div>
+  
+              <div class="col-md-4 position-relative">
+                <label for="numero" class="form-label">Número</label>
+                <input type="text" class="form-control" id="numero" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+                <div id="feedback-numero" class="">
+                </div>
+              </div>
+  
+              <div class="col-md-2 position-relative">
+                <label for="edad" class="form-label">Edad</label>
+                <input type="number" class="form-control" id="edad" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+                <div id="feedback-edad" class="">
+                </div>
+              </div>
+
+              <div class="col-md-3 position-relative">
+                <label for="correo" class="form-label">Correo</label>
+                <input type="text" class="form-control" id="correo" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+                <div id="feedback-correo" class="">
+                </div>
+              </div>
+  
+              <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">El paciente tiene diabetes:</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="diabetes" value="si"
+                      checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Si
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="diabetes" value="no">
+                    <label class="form-check-label" for="gridRadios2">
+                      No
+                    </label>
+                  </div>
+              </fieldset>
+  
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="comentario"
+                  style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Déjanos tu comentario</label>
+              </div>
+  
+              <div class="col-12">
+                <button id="boton"class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <script src="js/operativo.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  </body>
+</html>
